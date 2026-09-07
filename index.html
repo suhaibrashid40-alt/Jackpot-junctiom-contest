@@ -116,15 +116,14 @@
   </div>
 
   <script>
-    function joinContest() {
-      document.getElementById("message").textContent =
-        "Contest entry opened. Please follow the official rules.";
-    }
+  document.getElementById("contestForm").addEventListener("submit", function(event) {
+    event.preventDefault();
 
-    function showRules() {
-      document.getElementById("message").textContent =
-        "Rules: Submit only your own gameplay entry and follow the published contest requirements.";
-    }
+    const username = document.getElementById("username").value;
+    const gameplay = document.getElementById("gameplay").value;
+    const telegram = document.getElementById("telegram").value;
+
+    document.getElementById("message").textContent =
+      "Entry submitted successfully for " + username + "!";
+  });
   </script>
-</body>
-</html>

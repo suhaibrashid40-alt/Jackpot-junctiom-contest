@@ -101,3 +101,24 @@
   </div>
 </body>
 </html>
+    </div>
+
+    <button class="join" onclick="joinContest()">Join Contest</button>
+    <button class="rules" onclick="showRules()">View Rules</button>
+
+    <p id="message"></p>
+  </div>
+
+  <script>
+    function joinContest() {
+      document.getElementById("message").textContent =
+        "Contest entry opened. Please follow the official rules.";
+    }
+
+    function showRules() {
+      document.getElementById("message").textContent =
+        "Rules: Submit only your own gameplay entry and follow the published contest requirements.";
+    }
+  </script>
+</body>
+</html>

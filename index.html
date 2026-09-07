@@ -101,9 +101,15 @@
   </div>
 </body>
 </html>
-    </div>
+    <form id="contestForm">
+  <input type="text" id="username" placeholder="CPM Username" required>
 
-    <button class="join" onclick="joinContest()">Join Contest</button>
+  <input type="url" id="gameplay" placeholder="Gameplay Link" required>
+
+  <input type="text" id="telegram" placeholder="Telegram Username (optional)">
+
+  <button class="join" type="submit">Submit Entry</button>
+    </form>
     <button class="rules" onclick="showRules()">View Rules</button>
 
     <p id="message"></p>
